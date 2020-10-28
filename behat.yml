@@ -1,0 +1,14 @@
+default:
+  extensions:
+    Laracasts\Behat:
+      env_path: .env.behat
+  suites:
+    leasingBudget:
+      contexts:
+        - GlobalContext
+        - UserContext
+        - OfferContext
+        - Company\ActionsContext
+        - Company\LeasingBudgetContext
+        - Company\LeasingConditionsContext
+        - Company\AdminRolesContext

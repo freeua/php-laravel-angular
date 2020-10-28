@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="234px" height="88px" viewBox="0 0 234 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Login" transform="translate(-597.000000, -65.000000)">
+            <g id="Group-5-Copy" transform="translate(597.000000, 64.000000)">
+                <path d="M45.8831349,3.30926337 L73.8831349,19.0592634 C77.6616587,21.184683 80,25.1828901 80,29.5181698 L80,60.4818302 C80,64.8171099 77.6616587,68.815317 73.8831349,70.9407366 L45.8831349,86.6907366 C42.2301724,88.745528 37.7698276,88.745528 34.1168651,86.6907366 L6.11686512,70.9407366 C2.33834135,68.815317 5.24025268e-14,64.8171099 4.61852778e-14,60.4818302 L4.26325641e-14,29.5181698 C4.17443857e-14,25.1828901 2.33834135,21.184683 6.11686512,19.0592634 L34.1168651,3.30926337 C37.7698276,1.25447196 42.2301724,1.25447196 45.8831349,3.30926337 Z" id="Polygon" fill="#50E3C2"></path>
+                <text id="Lieferant" font-family=".SFNSDisplay, .SF NS Display" font-size="36" font-weight="normal" fill="#202020">
+                    <tspan x="97" y="60">Lieferant</tspan>
+                </text>
+                <path d="M44.012,54.924 L44.012,57.948 L29,57.948 L29,33 L32.492,33 L32.492,54.924 L44.012,54.924 Z M47.684,33 L51.176,33 L51.176,57.948 L47.684,57.948 L47.684,33 Z" id="LI" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

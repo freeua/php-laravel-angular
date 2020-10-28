@@ -1,0 +1,112 @@
+{
+    "name": "laravel/laravel",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/flaxandteal/Behat-Laravel-Extension"
+        }
+    ],
+    "require": {
+        "php": "^7.2.0",
+        "ext-bcmath": "*",
+        "ext-gmp": "*",
+        "ext-intl": "*",
+        "ext-json": "*",
+        "ext-mysqlnd": "*",
+        "ext-openssl": "*",
+        "ext-pdo": "*",
+        "asm89/stack-cors": "^1.2",
+        "brick/money": "^0.4.1",
+        "doctrine/dbal": "^2.9",
+        "fideloper/proxy": "^4.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "illuminate/console": "5.8.*",
+        "illuminate/contracts": "5.8.*",
+        "illuminate/support": "5.8.*",
+        "jackiedo/dotenv-editor": "^1.0",
+        "jeremeamia/superclosure": "^2.4",
+        "laravel/framework": "5.8.*",
+        "maatwebsite/excel": "^3.1",
+        "mpdf/mpdf": "^7.1",
+        "spatie/eloquent-sortable": "^3.4",
+        "spatie/laravel-permission": "^2.11",
+        "spatie/laravel-sluggable": "^2.1",
+        "spatie/laravel-translatable": "^4.1.2",
+        "troelskn/laravel-fillable-relations": "dev-master",
+        "tutorigo/laravel-ide-macros": "^1.0",
+        "tymon/jwt-auth": "dev-develop",
+        "watson/validating": "^3.1",
+        "web-token/jwt-core": "^2.0",
+        "web-token/jwt-framework": "^2.0",
+        "web-token/jwt-signature": "^2.0"
+    },
+    "require-dev": {
+        "barryvdh/laravel-ide-helper": "^2.4",
+        "behat/behat": "^3.5",
+        "behat/mink": "^1.7",
+        "behat/mink-extension": "^2.3",
+        "filp/whoops": "^2.0",
+        "fzaninotto/faker": "^1.4",
+        "laravel/homestead": "^7.16",
+        "laravel/tinker": "^1.0",
+        "laracasts/behat-laravel-extension": "dev-bug/78-not-compatible-with-laravel-56",
+        "mockery/mockery": "^1.0",
+        "nunomaduro/collision": "^2.0",
+        "phpmd/phpmd": "^2.6",
+        "phpunit/phpunit": "^7.0",
+        "squizlabs/php_codesniffer": "^3.3",
+        "symfony/dependency-injection": "^4.1"
+    },
+    "autoload": {
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "@php -r \"file_exists('Homestead.yaml') || copy('Homestead.yaml.example', 'Homestead.yaml');\"",
+            "@php artisan key:generate"
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate"
+        ],
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover",
+            "php artisan ide-helper:generate",
+            "php artisan ide-helper:meta"
+        ],
+        "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "php artisan ide-helper:generate",
+            "php artisan ide-helper:meta"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

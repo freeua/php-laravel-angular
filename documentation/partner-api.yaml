@@ -1,0 +1,1011 @@
+openapi: 3.0.2
+info:
+  title: Partner API
+  version: 1.3.0
+servers:
+  - url: https://api.sandbox.rcdevelopment.de/
+  - url: https://v1.api.meindienstrad.services/
+  - url: http://api.mercator.test/
+paths:
+  /oauth2/auth:
+    servers:
+      - url: https://auth.rcdevelopment.de/
+      - url: https://auth.meindienstrad.services/
+      - url: https://auth.mercator.test/
+    get:
+      tags:
+        - OAuth
+      summary: OAuth2 authorization endpoint
+      description: This endpoint is used to ask for authorization through some of
+        the flows specified on the OAuth Spec
+      parameters:
+        - name: client_id
+          in: query
+          description: This is the id we gave to you to allow the use of our OAuth2
+            system
+          example: partner-client
+          required: true
+          schema:
+            type: string
+        - name: client_secret
+          in: query
+          description: This param is required for Client Credentials flow. It is the
+            secret we gave you with client_id. Keep it safe!
+          example: secret
+          required: true
+          schema:
+            type: string
+        - name: redirect_uri
+          in: query
+          description: 'This usually is a callback where you’ll receive via query params
+          the token_id. Keep in mind you should use always the same callback that
+          you have given to us. Required for Client Credentials flow and Authorization
+          Code flow. '
+          example: https://partner.test/oauth_callback
+          required: true
+          schema:
+            type: string
+        - name: scope
+          in: query
+          description: 'The scope you want the access_token for. It is required to specify
+          it to make requests to our resource servers '
+          example: openid
+          required: true
+          schema:
+            type: string
+        - name: response_type
+          in: query
+          description: 'The type of response you want this endpoint respond. Usually
+          code. '
+          example: code
+          required: true
+          schema:
+            type: string
+        - name: nonce
+          in: query
+          description: 'A random generated nonce that will help you to check the JWT.
+          This is only required when requesting an openid. Minimum of 8 characters
+          is required '
+          example: a2u72vsa
+          required: true
+          schema:
+            type: string
+        - name: state
+          in: query
+          description: 'A random generated code that will help to avoid CSRF attacks.
+          Minimum of 8 characters is required '
+          example: 1jg863pc
+          required: true
+          schema:
+            type: string
+      responses:
+        302:
+          description: Redirection to our login provider if request is correct or to our error page if something is wrong
+
+  /oauth2/token:
+    servers:
+      - url: https://auth.rcdevelopment.de/
+      - url: https://auth.meindienstrad.services/
+      - url: https://auth.mercator.test/
+    post:
+      tags:
+        - OAuth
+      summary: OAuth2 token endpoint
+      description: 'Keep in mind that those are all of the query params you can pass
+        to this endpoint, but this doesn’t mean you’ve to specify them. Read the OAuth
+        spec for more info. '
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/OAuthTokenRequest'
+      responses:
+        200:
+          description: Success
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/OAuthTokenResponse'
+        400:
+          $ref: '#/components/responses/OAuthBadRequest'
+        401:
+          $ref: '#/components/responses/OAuthUnauthorizedError'
+        500:
+          $ref: '#/components/responses/OAuthError'
+
+  /userinfo:
+    get:
+
+      security:
+        - BearerAuth: []
+      tags:
+        - User
+      summary: User information
+      description: |-
+        This endpoint will give you all the information we have on our system about the user of the token. This is the endpoint you have to use to register and login a user on your system or to know your user information that we have on our system.
+        Please take into account that this endpoint will return all the info of the user that issued the token. This will not work with the token generated through Client Credentials Grant and you’ll receive an error.
+      responses:
+        200:
+          description: Success
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/UserInfo'
+        401:
+          $ref: '#/components/responses/UnauthorizedError'
+        500:
+          $ref: '#/components/responses/OAuthError'
+
+  /leasings/product-categories:
+    get:
+      security:
+        - BearerAuth: []
+      tags:
+        - Leasings
+      summary: Product Categories
+      description: Our system relies on product categories to specify different leasing
+        conditions to our final users. That’s why this list is very important and
+        why you are required to specify it on Add Offer Request.
+      responses:
+        200:
+          description: Success
+          content:
+            'application/json':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ProductCategory'
+        401:
+          $ref: '#/components/responses/UnauthorizedError'
+        500:
+          $ref: '#/components/responses/UnexpectedError'
+
+  /leasings/offers:
+    post:
+      security:
+        - BearerAuth: []
+      tags:
+        - Leasings
+      summary: Add Offer
+      description: An offer is the first leasing proposal for the final user. This
+        means this is the first step for starting a leasing with the users of Benefit
+        Portal. Keep in mind that this offer can be accepted or rejected. If it is
+        accepted it will appear on the List orders endpoint as a “Open” order.
+      requestBody:
+        content:
+          'application/json':
+            schema:
+              $ref: '#/components/schemas/OfferRequest'
+        required: true
+      responses:
+        200:
+          description: Offer is successfully created
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/Offer'
+        401:
+          $ref: '#/components/responses/UnauthorizedError'
+        403:
+          $ref: '#/components/responses/ForbiddenError'
+        404:
+          $ref: '#/components/responses/UserNotFound'
+        422:
+          $ref: '#/components/responses/OfferUnprocessableError'
+        500:
+          $ref: '#/components/responses/UnexpectedError'
+    get:
+      security:
+        - BearerAuth: []
+      tags:
+        - Leasings
+      summary: List Offers
+      description: List of all offers that you, as a partner, have created.
+      responses:
+        200:
+          description: Success
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/Offer'
+        401:
+          $ref: '#/components/responses/UnauthorizedError'
+        403:
+          $ref: '#/components/responses/ForbiddenError'
+        500:
+          $ref: '#/components/responses/UnexpectedError'
+  /leasings/offers/{id}:
+    get:
+      security:
+        - BearerAuth: []
+      tags:
+        - Leasings
+      summary: Offers detail
+      parameters:
+        - name: id
+          in: path
+          required: true
+          example: 1
+          schema:
+            type: integer
+      description: The detail of an offer.
+      responses:
+        200:
+          description: Success
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/Offer'
+        401:
+          $ref: '#/components/responses/UnauthorizedError'
+        403:
+          $ref: '#/components/responses/ForbiddenError'
+        404:
+          $ref: '#/components/responses/OfferNotFound'
+        500:
+          $ref: '#/components/responses/UnexpectedError'
+  /leasings/orders:
+    get:
+      security:
+        - BearerAuth: []
+      tags:
+        - Leasings
+      summary: List orders
+      description: 'Here you’ll have all your accepted offers a.k.a. orders. These
+        orders will obey the following flow: “Open” -> “Ready” -> “Picked Up”. This
+        endpoint is useful for tracking your orders within our system. The userId
+        field on the response will match the sub field of the user you received on
+        User information endpoint.'
+      responses:
+        200:
+          description: Success
+          content:
+            'application/json':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Order'
+        401:
+          $ref: '#/components/responses/UnauthorizedError'
+        500:
+          $ref: '#/components/responses/UnexpectedError'
+
+  /leasings/orders/{id}:
+    get:
+      security:
+        - BearerAuth: []
+      tags:
+        - Leasings
+      summary: Get specific order
+      description: To obtain specific info of an offer, you can call this endpoint
+        with the id of the order. Please take into account that the id of the order
+        is not the same as the offer you received.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        200:
+          description: Success
+          content:
+            'application/json':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Order'
+        401:
+          $ref: '#/components/responses/UnauthorizedError'
+        403:
+          $ref: '#/components/responses/ForbiddenError'
+        404:
+          $ref: '#/components/responses/OrderNotFound'
+        500:
+          $ref: '#/components/responses/UnexpectedError'
+
+  /leasings/orders/{id}/credit-note:
+    get:
+      security:
+        - BearerAuth: []
+      tags:
+        - Leasings
+      description: Endpoint to download the credit note pdf as binary.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        200:
+          description: Success
+          content:
+            'application/pdf':
+              schema:
+                type: string
+                format: binary
+        401:
+          $ref: '#/components/responses/UnauthorizedError'
+        403:
+          $ref: '#/components/responses/ForbiddenError'
+        404:
+          $ref: '#/components/responses/OrderNotFound'
+        500:
+          $ref: '#/components/responses/UnexpectedError'
+
+  /leasings/orders/{id}/ready:
+    put:
+      security:
+        - BearerAuth: []
+      tags:
+        - Leasings
+      summary: Mark Order as ready
+      description: This endpoint is used to mark an order as ready for pick up. The
+        order will appear to the user on Benefit Portal for the user as ready to be
+        picked up with a pick-up code.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        200:
+          description: Success
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/OrderMarkedAsReady'
+        401:
+          $ref: '#/components/responses/UnauthorizedError'
+        403:
+          $ref: '#/components/responses/ForbiddenError'
+        422:
+          description: Errors related to wrong request due to wrong request values
+          content:
+            'application/json':
+              examples:
+                'Wrong order status':
+                  $ref: '#/components/examples/WrongOrderStatus'
+        500:
+          $ref: '#/components/responses/UnexpectedError'
+
+  /leasings/orders/{id}/pick-up:
+    put:
+      security:
+        - BearerAuth: []
+      tags:
+        - Leasings
+      summary: Mark Order as picked up
+      description: This endpoint is the last step to start a leasing with a user of
+        Benefit Portal. If you specify the correct information on the request, the
+        offer will be marked as Picked Up and this means the Benefit Portal user has
+        correctly picked up the bike.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        content:
+          'application/json':
+            schema:
+              $ref: '#/components/schemas/PickUpRequest'
+        required: true
+      responses:
+        200:
+          description: Success
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/OrderPickedUp'
+        401:
+          $ref: '#/components/responses/UnauthorizedError'
+        403:
+          $ref: '#/components/responses/ForbiddenError'
+        422:
+          description: Errors related to wrong request due to wrong request values
+          content:
+            'application/json':
+              examples:
+                'Wrong Order Status':
+                  $ref: '#/components/examples/WrongOrderStatus'
+                'Wrong Pickup Code':
+                  $ref: '#/components/examples/WrongPickupCode'
+        500:
+          $ref: '#/components/responses/UnexpectedError'
+  /leasings/orders/{id}/read-credit-note:
+    put:
+      security:
+        - BearerAuth: []
+      tags:
+        - Leasings
+      summary: Mark Credit Note of the order as read
+      description: When the supplier has downloaded the Credit note, you should notify us through this endpoint
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+
+      responses:
+        200:
+          description: Success
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/OrderPickedUp'
+        401:
+          $ref: '#/components/responses/UnauthorizedError'
+        403:
+          $ref: '#/components/responses/ForbiddenError'
+        422:
+          description: Errors related to wrong request due to wrong request values
+          content:
+            'application/json':
+              examples:
+                'Wrong Order Status':
+                  $ref: '#/components/examples/WrongOrderStatus'
+                'Wrong Pickup Code':
+                  $ref: '#/components/examples/WrongPickupCode'
+        500:
+          $ref: '#/components/responses/UnexpectedError'
+  /leasings/users/{id}/accessories-reminder:
+    post:
+      security:
+        - BearerAuth: []
+      tags:
+        - Leasings
+      summary: Send reminder to the user
+      description: Send a reminder to the user for getting the accessories
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        200:
+          description: Success
+          content:
+            'application/json':
+              schema:
+                type: object
+        401:
+          $ref: '#/components/responses/UnauthorizedError'
+        403:
+          $ref: '#/components/responses/ForbiddenError'
+        422:
+          description: Errors related to wrong request due to wrong request values
+          content:
+            'application/json':
+              examples:
+                'Wrong Order Status':
+                  $ref: '#/components/examples/WrongOrderStatus'
+                'Wrong Pickup Code':
+                  $ref: '#/components/examples/WrongPickupCode'
+        500:
+          $ref: '#/components/responses/UnexpectedError'
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+
+  responses:
+    UnauthorizedError:
+      description: Access token is missing or invalid
+    ForbiddenError:
+      description: You are not allowed to perform this operation
+    UserNotFound:
+      description: Error when the offer is not found
+      content:
+        'application/json':
+          schema:
+            $ref: '#/components/schemas/DefaultError'
+          example:
+            success: false
+            message: No query results for model [App\Portal\Models\User] 4
+    OfferUnprocessableError:
+      description: Your request is incorrect in some way. Be careful with minPrice and maxPrice. If
+        the request contains some invalid format it will list the wrong fields as stated in "Wrong offer request with incorrect fields".
+      content:
+        'application/json':
+          schema:
+            $ref: '#/components/schemas/ValidationError'
+          examples:
+            Minimum bike error:
+              value:
+                message: Offer price (agreed purchase price + accessories discounted price) should be greater than minimum \nconfigured on company or user
+                exceptionCode: minimumPriceError
+            Maximum bike error:
+              value:
+                message: Offer price (agreed purchase price + accessories discounted price) should be greater than minimum \nconfigured on company or user
+                exceptionCode: minimumPriceError
+            Wrong offer request with incorrect fields:
+              value:
+                success: false
+                code: 422
+                exceptionCode: validationFailed
+                message: Validierungen fehlgeschlagen
+                payload:
+                  product:
+                    model:
+                      - product.model muss ausgefüllt sein.
+                  supplier:
+                    name:
+                      - supplier.name muss ausgefüllt sein.
+    OfferNotFound:
+      description: The offer you've specified is not present on the system
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/DefaultError'
+    OrderNotFound:
+      description: The order you've specified as a parameter is not present on the system
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/DefaultError'
+    UnexpectedError:
+      description: An unexpected error has occurred on the server and the
+        request cannot be handled.
+      content:
+        'application/json':
+          schema:
+            $ref: '#/components/schemas/DefaultError'
+    OAuthError:
+      description: Unexpected error from our auth server
+      content:
+        'application/json':
+          schema:
+            $ref: '#/components/schemas/OAuthError'
+    OAuthUnauthorizedError:
+      description: Access token is missing or invalid
+      content:
+        'application/json':
+          schema:
+            $ref: '#/components/schemas/OAuthError'
+    OAuthBadRequest:
+      description: The request have some invalid field
+      content:
+        'application/json':
+          schema:
+            $ref: '#/components/schemas/OAuthError'
+
+  schemas:
+    DefaultError:
+      type: object
+      properties:
+        success:
+          type: string
+        code:
+          type: integer
+        message:
+          type: string
+        payload:
+          type: object
+    ValidationError:
+      type: object
+      properties:
+        exceptionCode:
+          description: this is the identifier of the exception.
+          type: string
+          example: validationFailed
+        success:
+          description: If the request is successful. Usually false.
+          type: boolean
+        code:
+          description: Status code of the request
+          type: integer
+        message:
+          type: string
+          description: Short message specifying the reason of the error
+        payload:
+          description: The content of the error. This is a nested object with all the errors per field
+          type: object
+    OAuthError:
+      type: object
+      properties:
+        error:
+          type: string
+          example: invalid_request
+        error_description:
+          type: string
+          example: The request is missing a required parameter, includes an invalid parameter value, includes a parameter more than once, or is otherwise malformed
+        error_hint:
+          type: string
+          example: Make sure that the various parameters are correct, be aware of case sensitivity and trim your parameters. Make sure that the client you are using
+            has exactly whitelisted the redirect_uri you specified.
+        status_code:
+          type: integer
+          example: 400
+
+    OAuthTokenRequest:
+      type: object
+      required:
+        - client_id
+        - client_secret
+        - grant_type
+        - redirect_uri
+      properties:
+        client_id:
+          description: This is the id we gave to you to allow the use of our OAuth2
+            system.
+          type: string
+          example: partner-client
+        client_secret:
+          description: The secret we gave you with the client_id.
+          example: secret
+        grant_type:
+          description: 'The type of grant you used. Possible values are “authorization_code”
+            and “client_credentials” '
+          type: string
+          example: client_credentials
+        scope:
+          description: The scope you want the access_token for. It is required to specify
+            it to make requests to our resource servers
+          type: string
+          example: leasings-partner
+        redirect_uri:
+          description: 'This usually is a callback where you’ll receive via query params
+            the token_id. Keep in mind you should use always the same callback that
+            you have given to us. Required for Client Credentials flow and Authorization
+            Code flow. '
+          type: string
+          example: https://partner.test/oauth_callback
+        code:
+          description: 'The authorization code that has been issued from the OAuth flow'
+          type: string
+
+    OAuthTokenResponse:
+      type: object
+      properties:
+        access_token:
+          type: string
+          description: The token you'll use to call the endpoints
+        expires_in:
+          type: integer
+          description: The lifetime in seconds of the access token. For example, the value "3600" denotes that the access token will expire in one hour from the time the response was generated.
+        id_token:
+          type: string
+          description: A JWT Token that contains the user info. To retrieve a refresh token request the openid scope.
+        refresh_token:
+          type: string
+          description: The refresh token, which can be used to obtain new access tokens. To retrieve it add the scope "offline" to your access token request.
+        scope:
+          type: string
+        token_type:
+          type: string
+    OrderMarkedAsReady:
+      type: object
+      properties:
+        status:
+          $ref: '#/components/schemas/Status'
+    OrderPickedUp:
+      type: object
+      properties:
+        status:
+          $ref: '#/components/schemas/Status'
+        creditNote:
+          type: string
+    Status:
+      type: object
+      properties:
+        id:
+          type: integer
+        label:
+          type: string
+        icon:
+          type: string
+        type:
+          type: string
+
+    Accessory:
+      type: object
+      properties:
+        name:
+          type: string
+          example: 8bar CLUB Cycling Bottle
+        amount:
+          type: number
+          example: 1
+        price:
+          type: number
+          example: 7.90
+        discount:
+          type: number
+          example: 10
+    Offer:
+      required:
+        - company
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        orderId:
+          type: integer
+        number:
+          type: string
+        company:
+          $ref: '#/components/schemas/Company'
+        product:
+          $ref: '#/components/schemas/Product'
+        supplier:
+          $ref: '#/components/schemas/Supplier'
+        pricing:
+          $ref: '#/components/schemas/Pricing'
+        employee:
+          $ref: '#/components/schemas/Employee'
+        accessories:
+          type: array
+          items:
+            $ref: '#/components/schemas/Accessory'
+        status:
+          $ref: '#/components/schemas/Status'
+        expiryDate:
+          type: string
+          format: date-time
+        deliveryDate:
+          type: string
+          format: date-time
+        createdAt:
+          type: string
+          format: date-time
+
+    Company:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        name:
+          type: string
+          example: Rashedi
+
+    Employee:
+      type: object
+      properties:
+        name:
+          type: string
+        id:
+          type: integer
+        salutation:
+          type: string
+        street:
+          type: string
+        city:
+          type: string
+        postalCode:
+          type: string
+        email:
+          type: string
+        phone:
+          type: string
+    PickUpRequest:
+      type: object
+      properties:
+        serialNumber:
+          type: string
+        idCard:
+          type: object
+          properties:
+            authority:
+              type: string
+            issueDate:
+              type: string
+              format: date-time
+        pickupCode:
+          type: string
+
+    ProductCategory:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+
+    UserInfo:
+      type: object
+      properties:
+        sub:
+          type: integer
+        id:
+          type: integer
+        code:
+          type: string
+        salutation:
+          type: string
+        companyName:
+          type: string
+        companyId:
+          type: integer
+        given_name:
+          type: string
+        family_name:
+          type: string
+        fullName:
+          type: string
+        email:
+          type: string
+        address:
+          type: string
+        city:
+          type: string
+        country:
+          type: string
+        postalCode:
+          type: string
+        phone:
+          type: string
+        maxBikePrice:
+          type: number
+        minBikePrice:
+          type: number
+        maxNumberContracts:
+          type: number
+
+    Order:
+      type: object
+      properties:
+        id:
+          type: integer
+        number:
+          type: string
+        offerId:
+          type: integer
+        accessories:
+          type: array
+          items:
+            $ref: '#/components/schemas/Accessory'
+        productCategory:
+          $ref: '#/components/schemas/ProductCategory'
+        company:
+          $ref: '#/components/schemas/Company'
+        product:
+          $ref: '#/components/schemas/Product'
+        supplier:
+          $ref: '#/components/schemas/Supplier'
+        pricing:
+          $ref: '#/components/schemas/Pricing'
+        employee:
+          $ref: '#/components/schemas/Employee'
+        leasingPeriod:
+          type: integer
+        status:
+          $ref: '#/components/schemas/Status'
+        notes:
+          type: string
+        date:
+          type: string
+          format: date
+        acceptedAt:
+          type: string
+          format: date
+        portalName:
+          type: string
+        creditNote:
+          type: string
+
+    Supplier:
+      type: object
+      properties:
+        gpNumber:
+          type: string
+          example: '197778'
+        bankAccount:
+          type: string
+          example: 'DE89 3704 0044 0532 0130 00'
+        country:
+          type: string
+          example: Germany
+        city:
+          type: string
+          example: Berlin
+        phone:
+          type: string
+          example: 07243 9380881
+        street:
+          type: string
+          example: Berlinerstraße, 56
+        taxId:
+          type: string
+          example: DE 308 413 456
+        postalCode:
+          type: string
+          example: "76337"
+        adminFullName:
+          type: string
+          example: Adam Straus
+        name:
+          type: string
+          example: Rashedi Supplier
+        bankName:
+          type: string
+          example: Deustche Bank
+        email:
+          type: string
+          example: joan.picornell@gmail.com
+    Product:
+      type: object
+      properties:
+        size:
+          type: string
+          example: 52cm
+        color:
+          type: string
+          example: Red
+        model:
+          type: string
+          example: Mitte Urban
+        brand:
+          type: string
+          example: 8bar
+        categoryId:
+          type: integer
+          example: 1
+    Pricing:
+      type: object
+      properties:
+        listPrice:
+          type: number
+        discountedPrice:
+          type: number
+        discount:
+          type: number
+        accessoriesPrice:
+          type: number
+        residualValue:
+          type: number
+
+    OfferRequest:
+      type: object
+      properties:
+        user:
+          type: object
+          properties:
+            id:
+              type: integer
+              example: 4
+        supplier:
+          $ref: '#/components/schemas/Supplier'
+        product:
+          $ref: '#/components/schemas/Product'
+        pricing:
+          type: object
+          properties:
+            listPrice:
+              type: number
+              example: 899.99
+            discountedPrice:
+              type: number
+              example: 886.49
+            discount:
+              type: number
+              example: 1.5
+        accessories:
+          type: array
+          items:
+            $ref: '#/components/schemas/Accessory'
+        expiryDate:
+          type: string
+          format: date-time
+        deliveryDate:
+          type: string
+          format: date-time
+  examples:
+    WrongOrderStatus:
+      value:
+        message: The order is not in the correct status
+        exceptionCode: wrongStatusOrder
+
+    WrongPickupCode:
+      value:
+        message: Wrong Pickup Code
+        exceptionCode: wrongPickupCode

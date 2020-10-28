@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: api-service
+spec:
+  selector:
+    app: mercator-api
+  ports:
+    - protocol: TCP
+      port: 80

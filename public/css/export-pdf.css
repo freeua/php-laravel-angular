@@ -1,0 +1,355 @@
+
+body {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+thead tr {
+    border-bottom: 1px solid #888;
+}
+
+td {
+    height: 30px;
+}
+
+#title-table-empty-td {
+    width: 20mm;
+    background-color: #4ca2d4;
+    padding: 8px 0 9px 0;
+}
+
+#title-table {
+    font-size: 12px;
+    font-family: roboto;
+    margin: 0 0 65px -20mm;
+}
+
+.title-td {
+    text-align: left;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: roboto;
+    color: #ffffff;
+    background-color: #4ca2d4;
+    padding: 8px 0 9px;
+    width: 295px;
+}
+
+
+.company-logo-td,
+.company-logo {
+    height: 42px;
+}
+
+.company-logo-td {
+    width: 318px;
+    text-align: right;
+}
+
+
+.title {
+    font-size: 14px;
+    font-family: roboto;
+    color: #4692be;
+    font-weight: bold;
+}
+
+.data {
+    font-size: 12px;
+    font-family: roboto;
+    color: #333;
+    font-weight: 300;
+}
+
+
+.td3 {
+    width: 40px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+.subtitle {
+    font-size: 19px;
+    font-family: roboto;
+    color: #4692be;
+    font-weight: bold;
+}
+
+.ft9 {
+    color: #ffffff;
+}
+
+
+p {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-family: roboto;
+    color: #353535;
+}
+
+.pl10 {
+    padding-left: 10px;
+}
+
+.pl5 {
+    padding-left: 5px;
+}
+
+td {
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.td0 {
+    width: 311px;
+}
+
+.td1 {
+    width: 19px;
+}
+
+.td2 {
+    width: 322px;
+}
+
+.td4 {
+    width: 110px;
+}
+
+.td5 {
+    width: 340px;
+}
+
+.td6 {
+    width: 250px;
+}
+
+.td7 {
+    width: 160px;
+}
+
+.td8 {
+    width: 153px;
+}
+
+.td11 {
+    width: 116px;
+}
+
+.td12 {
+    width: 187px;
+}
+
+.vab {
+    vertical-align: bottom;
+}
+
+.td13 {
+    width: 9px;
+}
+
+.td15 {
+    width: 2px;
+}
+
+.td16 {
+    border-bottom: #4692be 1px solid;
+    width: 155px;
+    background: #4692be;
+}
+
+.td18 {
+    width: 66px;
+}
+
+.td19 {
+    width: 34px;
+}
+
+.td21 {
+    border: #353535 1px solid;
+    width: 21px;
+}
+
+.td22 {
+    border-bottom: #edf6fa 1px solid;
+    width: 155px;
+    padding-left: 10px;
+}
+
+.td23 {
+    width: 190px;
+}
+
+.td24 {
+    border-bottom: #edf6fa 1px solid;
+    width: 190px;
+}
+
+.td29 {
+    width: 27px;
+}
+
+.td30 {
+    width: 541px;
+}
+
+.td-color {
+    background: #edf6fa;
+}
+
+.check-mark-td {
+    text-align: center
+}
+
+.check-mark {
+    width: 10px;
+    height: 10px;
+}
+
+.tr1 {
+    height: 23px;
+}
+
+.tr3 {
+    height: 2px;
+}
+
+.tr5 {
+    height: 15px;
+}
+
+.tr19 {
+    height: 40px;
+}
+
+.date-td {
+    height: 12px;
+}
+
+table {
+    font-size: 12px;
+    font-family: roboto;
+    color: #353535;
+}
+
+.called-table {
+    margin-top: 25px;
+}
+
+.t2 {
+    margin-top: 28px;
+}
+
+.t3 {
+    margin-top: 77px;
+}
+
+#footer {
+    margin: 0;
+}
+
+#footer-table {
+    font-size: 11px;
+    font-family: roboto;
+    width: 100%;
+    border-top: 1px solid #cccccc;
+    margin: 0 -12mm 0 -20mm
+}
+
+.contact-td {
+    height: 27px;
+    padding: 0 0 0 20mm;
+    margin: 0;
+    width: 80%;
+    vertical-align: middle;
+}
+
+.delimiter {
+    font-size: 15px;
+    font-family: roboto;
+    line-height: 18px;
+}
+
+.ft11 {
+    font-size: 11px;
+    font-family: roboto;
+    line-height: 14px;
+}
+
+.page-number-date {
+    padding: 0 12mm 0 0;
+    margin: 0;
+    width: 20%;
+    vertical-align: bottom;
+    text-align: right;
+}
+
+.page-number-p,
+.date-p {
+    margin-top: 0;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+.page-number-p {
+    font-size: 12px;
+    font-family: roboto;
+    line-height: 15px;
+}
+
+.date-p {
+    font-size: 8px;
+    font-family: roboto;
+    line-height: 10px;
+}
+
+.p-with-mb {
+    margin-bottom: 8px
+}
+
+.mb5 {
+    margin-bottom: 5px;
+}
+
+
+.pd10 {
+    padding: 10px;
+}
+
+.become-contract-table {
+    font-size: 12px;
+}
+
+@page {
+    footer: footer;
+}
+
+.header-warning{
+    padding:30px;
+    text-align: center;
+    color:#888;
+    margin-bottom: 30px;
+}
+
+.signature-text {
+    font-size: 10px;
+}
+
+.signature {
+    vertical-align: bottom;
+}
+
+.bold {
+    font-weight: bold;
+}

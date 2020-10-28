@@ -1,0 +1,1827 @@
+[
+  {
+    "city": "Berlin",
+    "lat": "52.516667",
+    "lng": "13.4"
+  },
+  {
+    "city": "Stuttgart",
+    "lat": "48.782343",
+    "lng": "9.180819"
+  },
+  {
+    "city": "Frankfurt",
+    "lat": "50.11552",
+    "lng": "8.684167"
+  },
+  {
+    "city": "Mannheim",
+    "lat": "49.496706",
+    "lng": "8.479547"
+  },
+  {
+    "city": "Hamburg",
+    "lat": "53.575323",
+    "lng": "10.01534"
+  },
+  {
+    "city": "Essen",
+    "lat": "51.45657",
+    "lng": "7.012282"
+  },
+  {
+    "city": "Duisburg",
+    "lat": "51.432469",
+    "lng": "6.765161"
+  },
+  {
+    "city": "Munich",
+    "lat": "48.15",
+    "lng": "11.583333"
+  },
+  {
+    "city": "D\u00fcsseldorf",
+    "lat": "51.228304",
+    "lng": "6.793849"
+  },
+  {
+    "city": "Cologne",
+    "lat": "50.933333",
+    "lng": "6.95"
+  },
+  {
+    "city": "Wuppertal",
+    "lat": "51.270268",
+    "lng": "7.167553"
+  },
+  {
+    "city": "Saarbr\u00fccken",
+    "lat": "49.235396",
+    "lng": "6.981646"
+  },
+  {
+    "city": "Marienberg",
+    "lat": "49.486021",
+    "lng": "11.086156"
+  },
+  {
+    "city": "Bremen",
+    "lat": "53.073789",
+    "lng": "8.826754"
+  },
+  {
+    "city": "Hannover",
+    "lat": "52.38497",
+    "lng": "9.737141"
+  },
+  {
+    "city": "Bonn",
+    "lat": "50.73438",
+    "lng": "7.095485"
+  },
+  {
+    "city": "Dresden",
+    "lat": "51.048562",
+    "lng": "13.745794"
+  },
+  {
+    "city": "Wiesbaden",
+    "lat": "50.082582",
+    "lng": "8.249322"
+  },
+  {
+    "city": "Dortmund",
+    "lat": "51.514942",
+    "lng": "7.465997"
+  },
+  {
+    "city": "Leipzig",
+    "lat": "51.34419",
+    "lng": "12.386504"
+  },
+  {
+    "city": "Heidelberg",
+    "lat": "49.404123",
+    "lng": "8.683733"
+  },
+  {
+    "city": "Karlsruhe",
+    "lat": "49.009365",
+    "lng": "8.40444"
+  },
+  {
+    "city": "Augsburg",
+    "lat": "48.371538",
+    "lng": "10.898514"
+  },
+  {
+    "city": "Bielefeld",
+    "lat": "52.028332",
+    "lng": "8.542002"
+  },
+  {
+    "city": "Koblenz",
+    "lat": "50.353573",
+    "lng": "7.578835"
+  },
+  {
+    "city": "Altchemnitz",
+    "lat": "50.811536",
+    "lng": "12.912827"
+  },
+  {
+    "city": "Kassel",
+    "lat": "51.313782",
+    "lng": "9.484645"
+  },
+  {
+    "city": "M\u00fcnster",
+    "lat": "51.961114",
+    "lng": "7.624239"
+  },
+  {
+    "city": "Kiel",
+    "lat": "54.312145",
+    "lng": "10.135526"
+  },
+  {
+    "city": "Freiburg",
+    "lat": "47.996861",
+    "lng": "7.84973"
+  },
+  {
+    "city": "Braunschweig",
+    "lat": "52.265939",
+    "lng": "10.526726"
+  },
+  {
+    "city": "F\u00fcrth",
+    "lat": "49.48121",
+    "lng": "10.96762"
+  },
+  {
+    "city": "L\u00fcbeck",
+    "lat": "53.86687",
+    "lng": "10.688367"
+  },
+  {
+    "city": "Osnabr\u00fcck",
+    "lat": "52.272642",
+    "lng": "8.049799"
+  },
+  {
+    "city": "Magdeburg",
+    "lat": "52.127731",
+    "lng": "11.629163"
+  },
+  {
+    "city": "Potsdam",
+    "lat": "52.402247",
+    "lng": "13.057122"
+  },
+  {
+    "city": "Erfurt",
+    "lat": "50.978695",
+    "lng": "11.032831"
+  },
+  {
+    "city": "Rostock",
+    "lat": "54.086813",
+    "lng": "12.113453"
+  },
+  {
+    "city": "Mainz",
+    "lat": "49.984188",
+    "lng": "8.279096"
+  },
+  {
+    "city": "Ulm",
+    "lat": "48.397053",
+    "lng": "9.968956"
+  },
+  {
+    "city": "W\u00fcrzburg",
+    "lat": "49.793912",
+    "lng": "9.951214"
+  },
+  {
+    "city": "Oldenburg",
+    "lat": "53.141178",
+    "lng": "8.214674"
+  },
+  {
+    "city": "Regensburg",
+    "lat": "49.034512",
+    "lng": "12.119234"
+  },
+  {
+    "city": "Ingolstadt",
+    "lat": "48.765081",
+    "lng": "11.423725"
+  },
+  {
+    "city": "G\u00f6ttingen",
+    "lat": "51.539334",
+    "lng": "9.934057"
+  },
+  {
+    "city": "Bremerhaven",
+    "lat": "53.550209",
+    "lng": "8.576735"
+  },
+  {
+    "city": "Cottbus",
+    "lat": "51.757691",
+    "lng": "14.328875"
+  },
+  {
+    "city": "Jena",
+    "lat": "50.928782",
+    "lng": "11.589901"
+  },
+  {
+    "city": "Gera",
+    "lat": "50.875507",
+    "lng": "12.083296"
+  },
+  {
+    "city": "Flensburg",
+    "lat": "54.78431",
+    "lng": "9.439611"
+  },
+  {
+    "city": "Schwerin",
+    "lat": "53.628373",
+    "lng": "11.409462"
+  },
+  {
+    "city": "Rosenheim",
+    "lat": "47.857316",
+    "lng": "12.119255"
+  },
+  {
+    "city": "Gie\u00dfen",
+    "lat": "50.58727",
+    "lng": "8.675536"
+  },
+  {
+    "city": "Stralsund",
+    "lat": "54.315823",
+    "lng": "13.088588"
+  },
+  {
+    "city": "Coburg",
+    "lat": "50.259366",
+    "lng": "10.963843"
+  },
+  {
+    "city": "Hofeck",
+    "lat": "50.330895",
+    "lng": "11.892585"
+  },
+  {
+    "city": "Emden",
+    "lat": "53.367454",
+    "lng": "7.207776"
+  },
+  {
+    "city": "Detmold",
+    "lat": "51.943277",
+    "lng": "8.872182"
+  },
+  {
+    "city": "Mei\u00dfen",
+    "lat": "51.15",
+    "lng": "13.483333"
+  },
+  {
+    "city": "Kitzingen",
+    "lat": "49.739731",
+    "lng": "10.150719"
+  },
+  {
+    "city": "Dingolfing",
+    "lat": "48.62958",
+    "lng": "12.497606"
+  },
+  {
+    "city": "Heppenheim",
+    "lat": "49.641447",
+    "lng": "8.632063"
+  },
+  {
+    "city": "Torgau",
+    "lat": "51.56016",
+    "lng": "12.996166"
+  },
+  {
+    "city": "Hanau",
+    "lat": "50.134229",
+    "lng": "8.914176"
+  },
+  {
+    "city": "Husum",
+    "lat": "54.482518",
+    "lng": "9.059913"
+  },
+  {
+    "city": "Schwandorf",
+    "lat": "49.32534",
+    "lng": "12.109795"
+  },
+  {
+    "city": "Bitburg",
+    "lat": "49.967937",
+    "lng": "6.527343"
+  },
+  {
+    "city": "Cham",
+    "lat": "49.225651",
+    "lng": "12.655013"
+  },
+  {
+    "city": "Traunstein",
+    "lat": "47.868247",
+    "lng": "12.643347"
+  },
+  {
+    "city": "L\u00fcchow",
+    "lat": "52.968114",
+    "lng": "11.153968"
+  },
+  {
+    "city": "Gifhorn",
+    "lat": "52.477743",
+    "lng": "10.551095"
+  },
+  {
+    "city": "Biberach",
+    "lat": "48.099942",
+    "lng": "9.786893"
+  },
+  {
+    "city": "Bad Reichenhall",
+    "lat": "47.729467",
+    "lng": "12.878193"
+  },
+  {
+    "city": "K\u00fcnzelsau",
+    "lat": "49.281802",
+    "lng": "9.683525"
+  },
+  {
+    "city": "Wei\u00dfenburg",
+    "lat": "49.030564",
+    "lng": "10.972771"
+  },
+  {
+    "city": "Regen",
+    "lat": "48.971901",
+    "lng": "13.128243"
+  },
+  {
+    "city": "Nuremberg",
+    "lat": "49.447778",
+    "lng": "11.068333"
+  },
+  {
+    "city": "Aurich",
+    "lat": "53.469193",
+    "lng": "7.482319"
+  },
+  {
+    "city": "Nordhorn",
+    "lat": "52.432784",
+    "lng": "7.068896"
+  },
+  {
+    "city": "Aichach",
+    "lat": "48.461421",
+    "lng": "11.134257"
+  },
+  {
+    "city": "Marburg",
+    "lat": "50.809044",
+    "lng": "8.770694"
+  },
+  {
+    "city": "G\u00f6rlitz",
+    "lat": "51.166667",
+    "lng": "15.0"
+  },
+  {
+    "city": "Vechta",
+    "lat": "52.726324",
+    "lng": "8.285982"
+  },
+  {
+    "city": "Trier",
+    "lat": "49.75979",
+    "lng": "6.636628"
+  },
+  {
+    "city": "Pirmasens",
+    "lat": "49.204106",
+    "lng": "7.603486"
+  },
+  {
+    "city": "Pirna",
+    "lat": "50.958054",
+    "lng": "13.938197"
+  },
+  {
+    "city": "Neustadt",
+    "lat": "49.350089",
+    "lng": "8.138863"
+  },
+  {
+    "city": "Beeskow",
+    "lat": "52.17291",
+    "lng": "14.245973"
+  },
+  {
+    "city": "Westerstede",
+    "lat": "53.256822",
+    "lng": "7.927372"
+  },
+  {
+    "city": "Verden",
+    "lat": "52.923425",
+    "lng": "9.234908"
+  },
+  {
+    "city": "Worms",
+    "lat": "49.632784",
+    "lng": "8.359164"
+  },
+  {
+    "city": "D\u00fcren",
+    "lat": "50.804337",
+    "lng": "6.492988"
+  },
+  {
+    "city": "Landsberg",
+    "lat": "48.047642",
+    "lng": "10.869584"
+  },
+  {
+    "city": "Ludwigsburg",
+    "lat": "48.893886",
+    "lng": "9.195419"
+  },
+  {
+    "city": "Meiningen",
+    "lat": "50.570435",
+    "lng": "10.417231"
+  },
+  {
+    "city": "Siegen",
+    "lat": "50.874815",
+    "lng": "8.02431"
+  },
+  {
+    "city": "Deggendorf",
+    "lat": "48.840855",
+    "lng": "12.960676"
+  },
+  {
+    "city": "Peine",
+    "lat": "52.319277",
+    "lng": "10.2352"
+  },
+  {
+    "city": "Frankfurt (Oder)",
+    "lat": "52.344312",
+    "lng": "14.53498"
+  },
+  {
+    "city": "Nienburg",
+    "lat": "52.646102",
+    "lng": "9.220856"
+  },
+  {
+    "city": "Brake",
+    "lat": "53.326867",
+    "lng": "8.480492"
+  },
+  {
+    "city": "Memmingen",
+    "lat": "47.985359",
+    "lng": "10.182507"
+  },
+  {
+    "city": "Kirchheimbolanden",
+    "lat": "49.662487",
+    "lng": "8.015131"
+  },
+  {
+    "city": "Tauberbischofsheim",
+    "lat": "49.624722",
+    "lng": "9.662778"
+  },
+  {
+    "city": "Emmendingen",
+    "lat": "48.118466",
+    "lng": "7.848932"
+  },
+  {
+    "city": "Warendorf",
+    "lat": "51.95109",
+    "lng": "7.987557"
+  },
+  {
+    "city": "Bad Segeberg",
+    "lat": "53.943131",
+    "lng": "10.302154"
+  },
+  {
+    "city": "Rotenburg",
+    "lat": "53.111251",
+    "lng": "9.410819"
+  },
+  {
+    "city": "Kronach",
+    "lat": "50.238777",
+    "lng": "11.33049"
+  },
+  {
+    "city": "Darmstadt",
+    "lat": "49.871674",
+    "lng": "8.650271"
+  },
+  {
+    "city": "Mindelheim",
+    "lat": "48.045781",
+    "lng": "10.492223"
+  },
+  {
+    "city": "Bergheim",
+    "lat": "50.954875",
+    "lng": "6.64094"
+  },
+  {
+    "city": "Donauw\u00f6rth",
+    "lat": "48.694951",
+    "lng": "10.779154"
+  },
+  {
+    "city": "Korbach",
+    "lat": "51.274307",
+    "lng": "8.87196"
+  },
+  {
+    "city": "Herzberg",
+    "lat": "51.691501",
+    "lng": "13.232048"
+  },
+  {
+    "city": "Hameln",
+    "lat": "52.109245",
+    "lng": "9.365097"
+  },
+  {
+    "city": "Suhl",
+    "lat": "50.609111",
+    "lng": "10.694009"
+  },
+  {
+    "city": "Friedberg",
+    "lat": "50.337391",
+    "lng": "8.755907"
+  },
+  {
+    "city": "Hof",
+    "lat": "50.31622",
+    "lng": "11.918332"
+  },
+  {
+    "city": "Neuburg",
+    "lat": "48.732181",
+    "lng": "11.18709"
+  },
+  {
+    "city": "Bad Kissingen",
+    "lat": "50.202278",
+    "lng": "10.077836"
+  },
+  {
+    "city": "Viersen",
+    "lat": "51.254348",
+    "lng": "6.394414"
+  },
+  {
+    "city": "Birkenfeld",
+    "lat": "49.652447",
+    "lng": "7.166679"
+  },
+  {
+    "city": "Bad Fallingbostel",
+    "lat": "52.866414",
+    "lng": "9.695579"
+  },
+  {
+    "city": "Halle",
+    "lat": "51.481473",
+    "lng": "11.967112"
+  },
+  {
+    "city": "Bamberg",
+    "lat": "49.893174",
+    "lng": "10.88883"
+  },
+  {
+    "city": "F\u00fcrstenfeldbruck",
+    "lat": "48.18662",
+    "lng": "11.27586"
+  },
+  {
+    "city": "Neuss",
+    "lat": "51.198071",
+    "lng": "6.685037"
+  },
+  {
+    "city": "Bad Kreuznach",
+    "lat": "49.841396",
+    "lng": "7.867127"
+  },
+  {
+    "city": "Heilbronn",
+    "lat": "49.13995",
+    "lng": "9.220541"
+  },
+  {
+    "city": "Bad Ems",
+    "lat": "50.332737",
+    "lng": "7.717548"
+  },
+  {
+    "city": "Schw\u00e4bisch Hall",
+    "lat": "49.105833",
+    "lng": "9.734167"
+  },
+  {
+    "city": "Offenburg",
+    "lat": "48.473768",
+    "lng": "7.944946"
+  },
+  {
+    "city": "Saalfeld",
+    "lat": "50.648259",
+    "lng": "11.365363"
+  },
+  {
+    "city": "Wolfenb\u00fcttel",
+    "lat": "52.164421",
+    "lng": "10.540946"
+  },
+  {
+    "city": "Altenkirchen",
+    "lat": "50.685945",
+    "lng": "7.64176"
+  },
+  {
+    "city": "Pforzheim",
+    "lat": "48.884361",
+    "lng": "8.698923"
+  },
+  {
+    "city": "G\u00fcnzburg",
+    "lat": "48.455989",
+    "lng": "10.276951"
+  },
+  {
+    "city": "Euskirchen",
+    "lat": "50.660569",
+    "lng": "6.787224"
+  },
+  {
+    "city": "Chemnitz",
+    "lat": "50.835701",
+    "lng": "12.929217"
+  },
+  {
+    "city": "Rendsburg",
+    "lat": "54.306634",
+    "lng": "9.663126"
+  },
+  {
+    "city": "Tirschenreuth",
+    "lat": "49.884428",
+    "lng": "12.337277"
+  },
+  {
+    "city": "Offenbach",
+    "lat": "50.100605",
+    "lng": "8.766466"
+  },
+  {
+    "city": "Uelzen",
+    "lat": "52.96572",
+    "lng": "10.561106"
+  },
+  {
+    "city": "Zwickau",
+    "lat": "50.72724",
+    "lng": "12.488394"
+  },
+  {
+    "city": "Schwabach",
+    "lat": "49.330468",
+    "lng": "11.023461"
+  },
+  {
+    "city": "Gelsenkirchen",
+    "lat": "51.507502",
+    "lng": "7.122826"
+  },
+  {
+    "city": "Mettmann",
+    "lat": "51.250404",
+    "lng": "6.975361"
+  },
+  {
+    "city": "Ravensburg",
+    "lat": "47.781982",
+    "lng": "9.61062"
+  },
+  {
+    "city": "Leer",
+    "lat": "53.233724",
+    "lng": "7.456431"
+  },
+  {
+    "city": "Wittmund",
+    "lat": "53.576739",
+    "lng": "7.77839"
+  },
+  {
+    "city": "Ingelheim",
+    "lat": "49.970782",
+    "lng": "8.058826"
+  },
+  {
+    "city": "H\u00f6xter",
+    "lat": "51.775814",
+    "lng": "9.378885"
+  },
+  {
+    "city": "Oranienburg",
+    "lat": "52.755772",
+    "lng": "13.241967"
+  },
+  {
+    "city": "Erbach",
+    "lat": "49.661484",
+    "lng": "8.994017"
+  },
+  {
+    "city": "Freising",
+    "lat": "48.402654",
+    "lng": "11.747976"
+  },
+  {
+    "city": "Landau",
+    "lat": "49.198444",
+    "lng": "8.116921"
+  },
+  {
+    "city": "Stendal",
+    "lat": "52.606895",
+    "lng": "11.858671"
+  },
+  {
+    "city": "Balingen",
+    "lat": "48.277142",
+    "lng": "8.852118"
+  },
+  {
+    "city": "Reutlingen",
+    "lat": "48.488779",
+    "lng": "9.213698"
+  },
+  {
+    "city": "Eisenach",
+    "lat": "50.980701",
+    "lng": "10.315221"
+  },
+  {
+    "city": "Tuttlingen",
+    "lat": "47.984644",
+    "lng": "8.817702"
+  },
+  {
+    "city": "Neum\u00fcnster",
+    "lat": "54.074773",
+    "lng": "9.981954"
+  },
+  {
+    "city": "Neu-Ulm",
+    "lat": "48.400724",
+    "lng": "9.99028"
+  },
+  {
+    "city": "K\u00f6then",
+    "lat": "51.751855",
+    "lng": "11.970928"
+  },
+  {
+    "city": "Schleiz",
+    "lat": "50.578663",
+    "lng": "11.810237"
+  },
+  {
+    "city": "Garmisch-Partenkirchen",
+    "lat": "47.498475",
+    "lng": "11.104356"
+  },
+  {
+    "city": "Baden-Baden",
+    "lat": "48.757631",
+    "lng": "8.242458"
+  },
+  {
+    "city": "Bayreuth",
+    "lat": "49.947823",
+    "lng": "11.578935"
+  },
+  {
+    "city": "Wunsiedel",
+    "lat": "50.043134",
+    "lng": "12.004459"
+  },
+  {
+    "city": "Osterode",
+    "lat": "51.726856",
+    "lng": "10.250894"
+  },
+  {
+    "city": "Sankt Wendel",
+    "lat": "49.466326",
+    "lng": "7.168142"
+  },
+  {
+    "city": "L\u00fcdenscheid",
+    "lat": "51.219774",
+    "lng": "7.6273"
+  },
+  {
+    "city": "Plauen",
+    "lat": "50.497305",
+    "lng": "12.137823"
+  },
+  {
+    "city": "Forst",
+    "lat": "51.735443",
+    "lng": "14.63971"
+  },
+  {
+    "city": "Pfaffenhofen",
+    "lat": "48.53159",
+    "lng": "11.506415"
+  },
+  {
+    "city": "Bochum",
+    "lat": "51.481651",
+    "lng": "7.216482"
+  },
+  {
+    "city": "Weimar",
+    "lat": "50.980301",
+    "lng": "11.32903"
+  },
+  {
+    "city": "Wilhelmshaven",
+    "lat": "53.529977",
+    "lng": "8.112526"
+  },
+  {
+    "city": "Limburg",
+    "lat": "50.383597",
+    "lng": "8.050302"
+  },
+  {
+    "city": "Freyung",
+    "lat": "48.80952",
+    "lng": "13.547679"
+  },
+  {
+    "city": "Merseburg",
+    "lat": "51.35478",
+    "lng": "11.989233"
+  },
+  {
+    "city": "Halberstadt",
+    "lat": "51.895617",
+    "lng": "11.056224"
+  },
+  {
+    "city": "Dessau-Ro\u00dflau",
+    "lat": "51.848277",
+    "lng": "12.229065"
+  },
+  {
+    "city": "Weiden",
+    "lat": "49.676824",
+    "lng": "12.156126"
+  },
+  {
+    "city": "Altenburg",
+    "lat": "50.987632",
+    "lng": "12.436838"
+  },
+  {
+    "city": "Heide",
+    "lat": "54.195794",
+    "lng": "9.098797"
+  },
+  {
+    "city": "B\u00f6blingen",
+    "lat": "48.684953",
+    "lng": "9.029552"
+  },
+  {
+    "city": "Kulmbach",
+    "lat": "50.100684",
+    "lng": "11.450319"
+  },
+  {
+    "city": "Homberg",
+    "lat": "51.029943",
+    "lng": "9.402612"
+  },
+  {
+    "city": "Perleberg",
+    "lat": "53.07583",
+    "lng": "11.857394"
+  },
+  {
+    "city": "M\u00fclheim",
+    "lat": "51.431391",
+    "lng": "6.883666"
+  },
+  {
+    "city": "Northeim",
+    "lat": "51.706616",
+    "lng": "9.999975"
+  },
+  {
+    "city": "Salzwedel",
+    "lat": "52.854354",
+    "lng": "11.152503"
+  },
+  {
+    "city": "Cuxhaven",
+    "lat": "53.866887",
+    "lng": "8.70168"
+  },
+  {
+    "city": "Pl\u00f6n",
+    "lat": "54.162408",
+    "lng": "10.423328"
+  },
+  {
+    "city": "M\u00fchlhausen",
+    "lat": "51.208959",
+    "lng": "10.452753"
+  },
+  {
+    "city": "Kempten",
+    "lat": "47.732209",
+    "lng": "10.315858"
+  },
+  {
+    "city": "G\u00fcstrow",
+    "lat": "53.798852",
+    "lng": "12.178073"
+  },
+  {
+    "city": "Lichtenfels",
+    "lat": "50.148152",
+    "lng": "11.069607"
+  },
+  {
+    "city": "Bad Salzungen",
+    "lat": "50.813418",
+    "lng": "10.236103"
+  },
+  {
+    "city": "Weilheim",
+    "lat": "47.841468",
+    "lng": "11.15484"
+  },
+  {
+    "city": "Jever",
+    "lat": "53.573676",
+    "lng": "7.898061"
+  },
+  {
+    "city": "Arnstadt",
+    "lat": "50.840478",
+    "lng": "10.95198"
+  },
+  {
+    "city": "L\u00fcneburg",
+    "lat": "53.250897",
+    "lng": "10.414087"
+  },
+  {
+    "city": "Delmenhorst",
+    "lat": "53.051103",
+    "lng": "8.630908"
+  },
+  {
+    "city": "Neubrandenburg",
+    "lat": "53.564144",
+    "lng": "13.275319"
+  },
+  {
+    "city": "Bad D\u00fcrkheim",
+    "lat": "49.461803",
+    "lng": "8.172358"
+  },
+  {
+    "city": "Greiz",
+    "lat": "50.657785",
+    "lng": "12.199182"
+  },
+  {
+    "city": "Alt\u00f6tting",
+    "lat": "48.225329",
+    "lng": "12.676646"
+  },
+  {
+    "city": "Erding",
+    "lat": "48.30662",
+    "lng": "11.907496"
+  },
+  {
+    "city": "L\u00fcbben",
+    "lat": "51.938144",
+    "lng": "13.888258"
+  },
+  {
+    "city": "Holzminden",
+    "lat": "51.82901",
+    "lng": "9.45902"
+  },
+  {
+    "city": "Wetzlar",
+    "lat": "50.561091",
+    "lng": "8.50495"
+  },
+  {
+    "city": "Soest",
+    "lat": "51.571657",
+    "lng": "8.108861"
+  },
+  {
+    "city": "Mosbach",
+    "lat": "49.353573",
+    "lng": "9.151062"
+  },
+  {
+    "city": "Heilbad Heiligenstadt",
+    "lat": "51.378187",
+    "lng": "10.137445"
+  },
+  {
+    "city": "Neustadt",
+    "lat": "49.732873",
+    "lng": "12.17773"
+  },
+  {
+    "city": "Calw",
+    "lat": "48.716828",
+    "lng": "8.737612"
+  },
+  {
+    "city": "Kleve",
+    "lat": "51.788258",
+    "lng": "6.138646"
+  },
+  {
+    "city": "Annaberg-Buchholz",
+    "lat": "50.579985",
+    "lng": "13.003333"
+  },
+  {
+    "city": "Wismar",
+    "lat": "53.893145",
+    "lng": "11.452859"
+  },
+  {
+    "city": "Aachen",
+    "lat": "50.774122",
+    "lng": "6.084726"
+  },
+  {
+    "city": "T\u00fcbingen",
+    "lat": "48.533333",
+    "lng": "9.05"
+  },
+  {
+    "city": "Freiberg",
+    "lat": "50.910894",
+    "lng": "13.338808"
+  },
+  {
+    "city": "M\u00f6nchengladbach",
+    "lat": "51.185386",
+    "lng": "6.441723"
+  },
+  {
+    "city": "Nordhausen",
+    "lat": "51.501799",
+    "lng": "10.795695"
+  },
+  {
+    "city": "Krefeld",
+    "lat": "51.339208",
+    "lng": "6.586152"
+  },
+  {
+    "city": "Stadthagen",
+    "lat": "52.324242",
+    "lng": "9.205315"
+  },
+  {
+    "city": "Hildesheim",
+    "lat": "52.154122",
+    "lng": "9.952068"
+  },
+  {
+    "city": "Celle",
+    "lat": "52.61909",
+    "lng": "10.092232"
+  },
+  {
+    "city": "Eberswalde",
+    "lat": "52.835127",
+    "lng": "13.82307"
+  },
+  {
+    "city": "Recklinghausen",
+    "lat": "51.61379",
+    "lng": "7.197381"
+  },
+  {
+    "city": "Eisenberg",
+    "lat": "50.968602",
+    "lng": "11.902075"
+  },
+  {
+    "city": "Kaufbeuren",
+    "lat": "47.882382",
+    "lng": "10.621923"
+  },
+  {
+    "city": "S\u00f6mmerda",
+    "lat": "51.159143",
+    "lng": "11.115239"
+  },
+  {
+    "city": "Remscheid",
+    "lat": "51.179829",
+    "lng": "7.192496"
+  },
+  {
+    "city": "Greifswald",
+    "lat": "54.093107",
+    "lng": "13.387857"
+  },
+  {
+    "city": "Rastatt",
+    "lat": "48.858512",
+    "lng": "8.209645"
+  },
+  {
+    "city": "Naumburg",
+    "lat": "51.149871",
+    "lng": "11.809792"
+  },
+  {
+    "city": "Lauf",
+    "lat": "49.51386",
+    "lng": "11.282474"
+  },
+  {
+    "city": "Amberg",
+    "lat": "49.442872",
+    "lng": "11.862672"
+  },
+  {
+    "city": "Ratzeburg",
+    "lat": "53.694698",
+    "lng": "10.790845"
+  },
+  {
+    "city": "Bad Homburg",
+    "lat": "50.229964",
+    "lng": "8.613056"
+  },
+  {
+    "city": "Neustadt",
+    "lat": "49.579531",
+    "lng": "10.611257"
+  },
+  {
+    "city": "Herne",
+    "lat": "51.538797",
+    "lng": "7.225716"
+  },
+  {
+    "city": "Sangerhausen",
+    "lat": "51.472209",
+    "lng": "11.295333"
+  },
+  {
+    "city": "Forchheim",
+    "lat": "49.72376",
+    "lng": "11.068238"
+  },
+  {
+    "city": "Eutin",
+    "lat": "54.140541",
+    "lng": "10.607507"
+  },
+  {
+    "city": "Bad Oldesloe",
+    "lat": "53.809544",
+    "lng": "10.37997"
+  },
+  {
+    "city": "Kelheim",
+    "lat": "48.921761",
+    "lng": "11.845459"
+  },
+  {
+    "city": "Bad Neustadt",
+    "lat": "50.324586",
+    "lng": "10.198731"
+  },
+  {
+    "city": "Helmstedt",
+    "lat": "52.230039",
+    "lng": "11.008984"
+  },
+  {
+    "city": "Heinsberg",
+    "lat": "51.063583",
+    "lng": "6.0998"
+  },
+  {
+    "city": "Zweibr\u00fccken",
+    "lat": "49.246864",
+    "lng": "7.369766"
+  },
+  {
+    "city": "Hagen",
+    "lat": "51.360811",
+    "lng": "7.471679"
+  },
+  {
+    "city": "Montabaur",
+    "lat": "50.435882",
+    "lng": "7.823203"
+  },
+  {
+    "city": "Ha\u00dffurt",
+    "lat": "50.03521",
+    "lng": "10.515604"
+  },
+  {
+    "city": "Pinneberg",
+    "lat": "53.667324",
+    "lng": "9.789362"
+  },
+  {
+    "city": "Apolda",
+    "lat": "51.026239",
+    "lng": "11.51638"
+  },
+  {
+    "city": "Bad Schwalbach",
+    "lat": "50.141956",
+    "lng": "8.069639"
+  },
+  {
+    "city": "Marktoberdorf",
+    "lat": "47.779637",
+    "lng": "10.617132"
+  },
+  {
+    "city": "Winsen",
+    "lat": "53.357528",
+    "lng": "10.21282"
+  },
+  {
+    "city": "Wesel",
+    "lat": "51.666897",
+    "lng": "6.620367"
+  },
+  {
+    "city": "Landshut",
+    "lat": "48.529612",
+    "lng": "12.161791"
+  },
+  {
+    "city": "Alzey",
+    "lat": "49.746574",
+    "lng": "8.115128"
+  },
+  {
+    "city": "Homburg",
+    "lat": "49.326366",
+    "lng": "7.33867"
+  },
+  {
+    "city": "Passau",
+    "lat": "48.574308",
+    "lng": "13.464016"
+  },
+  {
+    "city": "Cloppenburg",
+    "lat": "52.847538",
+    "lng": "8.045"
+  },
+  {
+    "city": "Miesbach",
+    "lat": "47.791218",
+    "lng": "11.833358"
+  },
+  {
+    "city": "Gotha",
+    "lat": "50.950945",
+    "lng": "10.705764"
+  },
+  {
+    "city": "Schwelm",
+    "lat": "51.286348",
+    "lng": "7.293884"
+  },
+  {
+    "city": "Kusel",
+    "lat": "49.537724",
+    "lng": "7.404717"
+  },
+  {
+    "city": "Meschede",
+    "lat": "51.350202",
+    "lng": "8.283325"
+  },
+  {
+    "city": "Steinfurt",
+    "lat": "52.135198",
+    "lng": "7.353441"
+  },
+  {
+    "city": "Aschaffenburg",
+    "lat": "49.977035",
+    "lng": "9.15214"
+  },
+  {
+    "city": "Paderborn",
+    "lat": "51.718127",
+    "lng": "8.757493"
+  },
+  {
+    "city": "Karlstadt",
+    "lat": "49.960341",
+    "lng": "9.772389"
+  },
+  {
+    "city": "Waiblingen",
+    "lat": "48.831538",
+    "lng": "9.315456"
+  },
+  {
+    "city": "Villingen-Schwenningen",
+    "lat": "48.062262",
+    "lng": "8.49358"
+  },
+  {
+    "city": "Rottweil",
+    "lat": "48.168228",
+    "lng": "8.618248"
+  },
+  {
+    "city": "G\u00f6ppingen",
+    "lat": "48.703582",
+    "lng": "9.656463"
+  },
+  {
+    "city": "Eichst\u00e4tt",
+    "lat": "48.888543",
+    "lng": "11.196753"
+  },
+  {
+    "city": "Freudenstadt",
+    "lat": "48.466951",
+    "lng": "8.41371"
+  },
+  {
+    "city": "Schleswig",
+    "lat": "54.521561",
+    "lng": "9.558598"
+  },
+  {
+    "city": "Erlangen",
+    "lat": "49.595606",
+    "lng": "10.994974"
+  },
+  {
+    "city": "Olpe",
+    "lat": "51.02899",
+    "lng": "7.851393"
+  },
+  {
+    "city": "L\u00f6rrach",
+    "lat": "47.616288",
+    "lng": "7.664842"
+  },
+  {
+    "city": "Ansbach",
+    "lat": "49.304808",
+    "lng": "10.593098"
+  },
+  {
+    "city": "Wittlich",
+    "lat": "49.985958",
+    "lng": "6.89308"
+  },
+  {
+    "city": "Neuruppin",
+    "lat": "52.925588",
+    "lng": "12.804559"
+  },
+  {
+    "city": "Sonneberg",
+    "lat": "50.3592",
+    "lng": "11.174631"
+  },
+  {
+    "city": "Bottrop",
+    "lat": "51.523918",
+    "lng": "6.928499"
+  },
+  {
+    "city": "Ludwigshafen",
+    "lat": "49.481206",
+    "lng": "8.446414"
+  },
+  {
+    "city": "Borken",
+    "lat": "51.843823",
+    "lng": "6.857743"
+  },
+  {
+    "city": "Starnberg",
+    "lat": "48.0",
+    "lng": "11.35"
+  },
+  {
+    "city": "Gummersbach",
+    "lat": "51.026079",
+    "lng": "7.564731"
+  },
+  {
+    "city": "Lauterbach",
+    "lat": "50.635582",
+    "lng": "9.397773"
+  },
+  {
+    "city": "Herford",
+    "lat": "52.114569",
+    "lng": "8.67343"
+  },
+  {
+    "city": "Rathenow",
+    "lat": "52.609013",
+    "lng": "12.346825"
+  },
+  {
+    "city": "Solingen",
+    "lat": "51.173433",
+    "lng": "7.084502"
+  },
+  {
+    "city": "Speyer",
+    "lat": "49.320833",
+    "lng": "8.431111"
+  },
+  {
+    "city": "Siegburg",
+    "lat": "50.800194",
+    "lng": "7.207693"
+  },
+  {
+    "city": "Burg",
+    "lat": "52.271784",
+    "lng": "11.851402"
+  },
+  {
+    "city": "Leverkusen",
+    "lat": "51.030299",
+    "lng": "6.984316"
+  },
+  {
+    "city": "Unna",
+    "lat": "51.537945",
+    "lng": "7.689687"
+  },
+  {
+    "city": "Coesfeld",
+    "lat": "51.943489",
+    "lng": "7.168094"
+  },
+  {
+    "city": "Cochem",
+    "lat": "50.145108",
+    "lng": "7.163793"
+  },
+  {
+    "city": "Eschwege",
+    "lat": "51.183859",
+    "lng": "10.053294"
+  },
+  {
+    "city": "Bad Hersfeld",
+    "lat": "50.87197",
+    "lng": "9.708908"
+  },
+  {
+    "city": "Bad Neuenahr-Ahrweiler",
+    "lat": "50.543224",
+    "lng": "7.111305"
+  },
+  {
+    "city": "Sondershausen",
+    "lat": "51.369733",
+    "lng": "10.87011"
+  },
+  {
+    "city": "Dachau",
+    "lat": "48.25838",
+    "lng": "11.449149"
+  },
+  {
+    "city": "Meppen",
+    "lat": "52.69085",
+    "lng": "7.292763"
+  },
+  {
+    "city": "Wolfsburg",
+    "lat": "52.424516",
+    "lng": "10.781499"
+  },
+  {
+    "city": "Brandenburg",
+    "lat": "52.410928",
+    "lng": "12.551172"
+  },
+  {
+    "city": "Sigmaringen",
+    "lat": "48.088291",
+    "lng": "9.230327"
+  },
+  {
+    "city": "Sonthofen",
+    "lat": "47.518213",
+    "lng": "10.282619"
+  },
+  {
+    "city": "Itzehoe",
+    "lat": "53.92516",
+    "lng": "9.517306"
+  },
+  {
+    "city": "Bergisch Gladbach",
+    "lat": "50.985596",
+    "lng": "7.132985"
+  },
+  {
+    "city": "Dillingen",
+    "lat": "48.581529",
+    "lng": "10.495275"
+  },
+  {
+    "city": "Saarlouis",
+    "lat": "49.313663",
+    "lng": "6.751539"
+  },
+  {
+    "city": "Gro\u00df-Gerau",
+    "lat": "49.921394",
+    "lng": "8.48255"
+  },
+  {
+    "city": "Oberhausen",
+    "lat": "51.473111",
+    "lng": "6.880739"
+  },
+  {
+    "city": "Goslar",
+    "lat": "51.917204",
+    "lng": "10.434446"
+  },
+  {
+    "city": "Neustadt",
+    "lat": "49.565583",
+    "lng": "8.843695"
+  },
+  {
+    "city": "Germersheim",
+    "lat": "49.223056",
+    "lng": "8.363889"
+  },
+  {
+    "city": "Hofheim",
+    "lat": "50.090194",
+    "lng": "8.449297"
+  },
+  {
+    "city": "Ebersberg",
+    "lat": "48.077878",
+    "lng": "11.964944"
+  },
+  {
+    "city": "Prenzlau",
+    "lat": "53.316246",
+    "lng": "13.862611"
+  },
+  {
+    "city": "Bad T\u00f6lz",
+    "lat": "47.760761",
+    "lng": "11.56301"
+  },
+  {
+    "city": "Parchim",
+    "lat": "53.42718",
+    "lng": "11.849164"
+  },
+  {
+    "city": "Luckenwalde",
+    "lat": "52.090293",
+    "lng": "13.167717"
+  },
+  {
+    "city": "Bernburg",
+    "lat": "51.794638",
+    "lng": "11.740096"
+  },
+  {
+    "city": "Osterholz-Scharmbeck",
+    "lat": "53.226979",
+    "lng": "8.79528"
+  },
+  {
+    "city": "Stade",
+    "lat": "53.593369",
+    "lng": "9.476292"
+  },
+  {
+    "city": "Neumarkt",
+    "lat": "49.281558",
+    "lng": "11.457205"
+  },
+  {
+    "city": "Salzgitter",
+    "lat": "52.083333",
+    "lng": "10.333333"
+  },
+  {
+    "city": "Bautzen",
+    "lat": "51.18035",
+    "lng": "14.434941"
+  },
+  {
+    "city": "Hildburghausen",
+    "lat": "50.426678",
+    "lng": "10.72889"
+  },
+  {
+    "city": "Heidenheim",
+    "lat": "48.680587",
+    "lng": "10.152483"
+  },
+  {
+    "city": "Wittenberg",
+    "lat": "51.86747",
+    "lng": "12.6377"
+  },
+  {
+    "city": "Kaiserslautern",
+    "lat": "49.442996",
+    "lng": "7.771614"
+  },
+  {
+    "city": "Miltenberg",
+    "lat": "49.704515",
+    "lng": "9.267253"
+  },
+  {
+    "city": "Coburg",
+    "lat": "50.261359",
+    "lng": "10.963256"
+  },
+  {
+    "city": "Fulda",
+    "lat": "50.554729",
+    "lng": "9.683439"
+  },
+  {
+    "city": "Senftenberg",
+    "lat": "51.525173",
+    "lng": "14.001635"
+  },
+  {
+    "city": "M\u00fchldorf",
+    "lat": "48.246695",
+    "lng": "12.521552"
+  },
+  {
+    "city": "Merzig",
+    "lat": "49.443313",
+    "lng": "6.638738"
+  },
+  {
+    "city": "Seelow",
+    "lat": "52.533373",
+    "lng": "14.380005"
+  },
+  {
+    "city": "Minden",
+    "lat": "52.289532",
+    "lng": "8.914552"
+  },
+  {
+    "city": "Waldshut-Tiengen",
+    "lat": "47.622491",
+    "lng": "8.199311"
+  },
+  {
+    "city": "Neunkirchen",
+    "lat": "49.344493",
+    "lng": "7.180446"
+  },
+  {
+    "city": "Neuwied",
+    "lat": "50.433601",
+    "lng": "7.470566"
+  },
+  {
+    "city": "Daun",
+    "lat": "50.197155",
+    "lng": "6.829418"
+  },
+  {
+    "city": "Esslingen",
+    "lat": "48.7374",
+    "lng": "9.316551"
+  },
+  {
+    "city": "Simmern",
+    "lat": "49.98198",
+    "lng": "7.523507"
+  },
+  {
+    "city": "G\u00fctersloh",
+    "lat": "51.906931",
+    "lng": "8.378535"
+  },
+  {
+    "city": "Diepholz",
+    "lat": "52.607826",
+    "lng": "8.370051"
+  },
+  {
+    "city": "Frankenthal",
+    "lat": "49.534143",
+    "lng": "8.353574"
+  },
+  {
+    "city": "Straubing",
+    "lat": "48.881259",
+    "lng": "12.573853"
+  },
+  {
+    "city": "Pfarrkirchen",
+    "lat": "48.43233",
+    "lng": "12.938694"
+  },
+  {
+    "city": "Hamm",
+    "lat": "51.673991",
+    "lng": "7.804448"
+  },
+  {
+    "city": "Haldensleben",
+    "lat": "52.286851",
+    "lng": "11.413255"
+  },
+  {
+    "city": "Aalen",
+    "lat": "48.834439",
+    "lng": "10.091336"
+  }
+]
